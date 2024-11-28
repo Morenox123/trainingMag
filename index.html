@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfilio Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.container {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    border: 10px solid color(rgb(255, 255, 255))
+}
+.flex .container {
+    width: 100%;
+    height: auto;
+    
+}
+.flex-box {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    font-size: 15px;
+    
+}
+
+
+/* HTML and Body */
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(248, 252, 5, 0.973);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+
+/* Navbar Styles */
+.navbar a {
+    font-size: 1.8rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: black;
+    border-bottom: 3px solid color(black)
+}
+
+
+/* Section Styles */
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30rem;
+    margin-right: 1000px;
+    color: black;
+    
+}
+
+/* Home Content */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem; 
+}
+span{
+    color: black;
+}
+
+
+
+.home-content h1 {
+    padding-bottom: 10px;
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.home-content h1:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.contanier {
+  width: 100%;
+  height: 100px;
+  float: right;
+
+
+}
+.flex-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.flex-container {
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.flex-box {
+  
+    width: 225;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+     
+}
+.flex-box img {
+    
+    width: 100%;
+    height: auto;
+
+}
+.flex-content{
+    
+    padding: 6px;
+
+}
+.i {
+ font-size: 20px;
+}
+</style>
+<body>
+	<header class="header">
+		<a href="index.html"><i class='bx bxl-medium-old bx-lg'></i></a>
+		<a href="#home" class="logo">Training Managemnt
+		<span>System</span> </a>
+
+
+
+		<nav class="navbar">
+			<a href="slider.html">Home</a>
+			<a href="login.html">login</a>
+			<a href="login.html">Sign up</a>
+		</nav>
+	</header>
+
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1>Modules</h1>
+
+		<div class="flex-container">
+			<div class="flex-box">
+			<img src="module.jpg">
+		
+	</div>
+</div>
+
+	<div class="flex-container">
+			<div class="flex-box">
+			<img src="module2.png">
+	</div>
+</div>
+	<div class="flex-container1">
+			<div class="flex-box">
+			<img src="Module+3.png">
+	</div>
+</div>
+</body>
+</html>
